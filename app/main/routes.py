@@ -6,6 +6,6 @@ main_blueprint = Blueprint('main', __name__, template_folder='templates')
 def home():
     return render_template('home.html')
 
-@main_blueprint.route('/about')
+@main_blueprint.route('/about') # canonical url does not have trailing '/'
 def about():
     return render_template('about.html')

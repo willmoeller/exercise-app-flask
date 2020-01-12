@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h1>Log Page</h1>
+  {% for k in workouts %}
+    <p>{{ k }}</p>
+  {% endfor %}
+{% endblock %}

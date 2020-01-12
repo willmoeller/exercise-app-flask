@@ -6,6 +6,9 @@ def create_app():
     from app.main.routes import main_blueprint
     app.register_blueprint(main_blueprint)
 
+    from app.workouts.routes import workouts_blueprint
+    app.register_blueprint(workouts_blueprint)
+
     # @app.route('/')
     # def index():
     #     return 'Hello World!'
